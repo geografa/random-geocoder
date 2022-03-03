@@ -1,0 +1,21 @@
+{
+  "name": "batch-geocoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify app.js > bundle.js",
+    "start": "budo app.js:bundle.js --live --port 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.6.0",
+    "@turf/random": "^6.5.0",
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4",
+    "mapbox": "^1.0.0-beta10",
+    "mapbox-gl": "^2.7.0",
+    "turf": "^3.0.14"
+  }
+}

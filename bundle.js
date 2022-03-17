@@ -37,6 +37,7 @@ function findBounds(cb) {
                 document.getElementById('addresses').innerHTML += match.features[0].place_name + '\n';
             });  
     });
+    console.log(controls);
     cb(controls);
 }
 let coords = [];
@@ -59,6 +60,27 @@ function showStops(controls) {
             'layout': {
                 'icon-image': 'dot-blue',
                 'icon-allow-overlap': true
+            },
+            'paint': {
+            //     'circle-color': [
+            //         'match',
+            //             ['get', 'accuracy'],
+            //             'rooftop',
+            //             '#fbb03b',
+            //             'parcel',
+            //             '#223b53',
+            //             'point',
+            //             '#e55e5e',
+            //             'interpolated',
+            //             '#3bb2d0',
+            //             'intersection',
+            //             '#bada55',
+            //             'approximate',
+            //             '#bada33',
+            //             'street',
+            //             '#bada22'
+            //             /* other */ '#ccc'
+            //         ]                    
             }
         });
     }
